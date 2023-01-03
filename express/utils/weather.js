@@ -18,6 +18,7 @@ const weather = (location, unit, callback) => {
           temperature: data.current.temperature,
           weather_description: data.current.weather_descriptions,
           location: data.location.country,
+          city: data.location.name,
         });
       }
     });
